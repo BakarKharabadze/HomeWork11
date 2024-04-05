@@ -1,24 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeShopApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-GD-kcc">
+                                <rect key="frame" x="16" y="50" width="343" height="584.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="pML-jY-7VJ">
+                                        <rect key="frame" x="31" y="14" width="283" height="226"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="226" id="wSG-CM-Gx2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="კაპუჩინო" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eex-7H-BT5">
+                                        <rect key="frame" x="31" y="254.00000000000003" width="283" height="31.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="შოკოლადით" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFr-Lb-jxA">
+                                        <rect key="frame" x="31" y="299.33333333333331" width="283" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-6G-187">
+                                        <rect key="frame" x="31" y="333.66666666666669" width="283" height="25"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vzA-Vb-eLQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="25"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pYF-x5-0Ou">
+                                                        <rect key="frame" x="0.0" y="-0.33333333333333215" width="25" height="24.666666666666664"/>
+                                                        <color key="tintColor" red="0.99209789182773978" green="0.6363556154374963" blue="0.23076742901793823" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="X5a-dD-RTz"/>
+                                                            <constraint firstAttribute="height" constant="25" id="wFS-Ki-U5U"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3m-ec-WVa">
+                                                        <rect key="frame" x="27" y="0.0" width="27.333333333333329" height="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" (230)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-V9-rm4">
+                                                        <rect key="frame" x="56.333333333333329" y="0.0" width="47" height="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-ud-4ok">
+                                                <rect key="frame" x="262" y="0.0" width="21" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="21" id="hiC-Sd-Hvu"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.99209789179999996" green="0.63635561539999996" blue="0.230767429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                                <connections>
+                                                    <action selector="favoriteDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgp-P3-6ev"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3r-6L-3OS">
+                                        <rect key="frame" x="31" y="372.66666666666669" width="283" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="JAr-rA-5kI"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="აღწერა" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-Qr-i07">
+                                        <rect key="frame" x="31" y="387.66666666666669" width="283" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-aG-RnS">
+                                        <rect key="frame" x="31" y="425.66666666666669" width="283" height="56"/>
+                                        <string key="text">მოცემული კაპუჩინო არის დაახლოებით 150 მლ. ის შეიცავს 25 მლ. ესპრესოს ყავას, 85 მლ. ახალთახალი მოწველილი ძროხის რძის რძეს, რომელიც სპეც... მეტი</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ზომა" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AY-H0-MXu">
+                                        <rect key="frame" x="31" y="495.66666666666663" width="283" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-vX-sff">
+                                        <rect key="frame" x="31" y="532.66666666666663" width="283" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSa-uL-FBB">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="44"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="პატარა"/>
+                                                <connections>
+                                                    <action selector="smallSizeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLV-eY-7cP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuk-eD-4rC">
+                                                <rect key="frame" x="93" y="0.0" width="102.66666666666669" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="sQL-GM-9QZ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="საშუალო"/>
+                                                <connections>
+                                                    <action selector="mediumSizeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xL-G3-863"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1n-D2-xAB">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="75.333333333333343" height="44"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="დიდი"/>
+                                                <connections>
+                                                    <action selector="bigSizeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svq-Sh-I8o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="14" left="31" bottom="8" right="29"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nHu-Gm-UB8">
+                                <rect key="frame" x="0.0" y="678" width="375" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IWK-gT-1Dl">
+                                        <rect key="frame" x="29.999999999999996" y="16" width="53.666666666666657" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ფასი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hF-eq-moy">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="₾ 4.50" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFa-u1-inw">
+                                                <rect key="frame" x="0.0" y="20.333333333333368" width="53.666666666666664" height="43.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpE-aa-cor">
+                                        <rect key="frame" x="126.66666666666667" y="16" width="218.33333333333331" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="MO6-nA-x3R"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ყიდვა"/>
+                                        <connections>
+                                            <action selector="buyDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYE-Qj-kC2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="16" left="30" bottom="20" right="30"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lTe-GD-kcc" secondAttribute="trailing" id="2eg-1J-OFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHu-Gm-UB8" secondAttribute="trailing" id="4qo-px-sHT"/>
+                            <constraint firstItem="lTe-GD-kcc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BGK-AY-XNn"/>
+                            <constraint firstItem="lTe-GD-kcc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="OGi-sh-lUu"/>
+                            <constraint firstAttribute="bottom" secondItem="nHu-Gm-UB8" secondAttribute="bottom" id="UZV-BF-0e6"/>
+                            <constraint firstItem="nHu-Gm-UB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X9k-nw-93C"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigSizeButton" destination="D1n-D2-xAB" id="P8M-gR-B0y"/>
+                        <outlet property="buyButton" destination="BpE-aa-cor" id="Ge9-bU-Ybt"/>
+                        <outlet property="chocolateLabel" destination="WFr-Lb-jxA" id="BCl-R6-Ixe"/>
+                        <outlet property="descriptionTitleLabel" destination="BUf-Qr-i07" id="MdE-Dd-gxD"/>
+                        <outlet property="imageView" destination="pML-jY-7VJ" id="qjf-SB-1zA"/>
+                        <outlet property="mainStackView" destination="lTe-GD-kcc" id="Gsw-Xg-9EJ"/>
+                        <outlet property="mediumSizeButton" destination="Iuk-eD-4rC" id="sXU-j0-7pB"/>
+                        <outlet property="priceLabel" destination="GFa-u1-inw" id="AQ7-vW-qfZ"/>
+                        <outlet property="priceTitleLabel" destination="6hF-eq-moy" id="x31-in-fjq"/>
+                        <outlet property="productDescriptionLabel" destination="mVt-aG-RnS" id="2vV-ka-e9B"/>
+                        <outlet property="ratingCounterLabel" destination="Hkf-V9-rm4" id="XvD-I5-Azi"/>
+                        <outlet property="ratingLabel" destination="n3m-ec-WVa" id="JZs-ii-YyQ"/>
+                        <outlet property="ratingStackView" destination="S6L-6G-187" id="bQn-VP-b1M"/>
+                        <outlet property="sizeLabel" destination="0AY-H0-MXu" id="BGc-cx-fFh"/>
+                        <outlet property="smallSizeButton" destination="rSa-uL-FBB" id="5EL-Vt-WL4"/>
+                        <outlet property="subtitleLabel" destination="WFr-Lb-jxA" id="piy-Zl-Ep7"/>
+                        <outlet property="titleLabel" destination="eex-7H-BT5" id="lDX-e1-MsT"/>
+                        <outlet property="viewLine" destination="I3r-6L-3OS" id="Ejl-Ev-bUX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="315" height="226"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
