@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupMainStackViewsCustomSpacings()
         setupButton()
-        setInfo()
         setupLabels()
+        setInfo()
     }
     
     //MARK: Private Methods
@@ -77,11 +77,12 @@ class ViewController: UIViewController {
         subtitleLabel.text = cappuccino.subtitle
         ratingLabel.text = cappuccino.rating
         ratingCounterLabel.text = cappuccino.ratingCount
+        descriptionTitleLabel.text = cappuccino.description
         priceLabel.text = cappuccino.price
         
         let attributedProductDescription = NSMutableAttributedString(string: cappuccino.description)
         let moreTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.brown]
-        let moreTextAttributedString = NSAttributedString(string: " მეტი", attributes: moreTextAttributes)
+        let moreTextAttributedString = NSAttributedString(string: "მეტი", attributes: moreTextAttributes)
         
         attributedProductDescription.append(moreTextAttributedString)
         productDescriptionLabel.attributedText = attributedProductDescription
